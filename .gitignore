@@ -1,0 +1,16 @@
+# input images
+*.svg
+
+# TTS models (svg_to_prism.py): mesh, material, texture
+*.obj
+*.mtl
+*.png
+
+# Print outputs (svg_to_print.py, stl_plate.py): prisms, plates, decal inks
+*.stl
+*.3mf
+*-ink.svg
+
+# Python / uv leftovers
+__pycache__/
+.venv/
