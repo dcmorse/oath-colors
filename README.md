@@ -6,13 +6,10 @@
   <img src="docs/tts.jpg" height="280" alt="Orange and teal custom pawns in Tabletop Simulator" title="In Tabletop Simulator">
 </p>
 
-## command-line tools for custom player components for Oath:Chronicles of Empire and Exile
+## Bring a `.svg` of your new character idea and convert it for use in TTS and 3d printing
 
-Say you came up with a spiffing idea for a cute new pawn for Oath by Buried Giant Studios. You could draft a .svg of the player pawn and the warbands, and then it would be nice to be able to either:
-- 3D print the new meeples
-- Import the art into Tabletop Simulator
-
-This repo contains tools for doing both things. 
+This repo contains command line tools for getting custom pawns into TTS and for 3d printing them.
+Additionally, 3d printing custom pawn shapes is supported.
 
 ## System Requirements
 - A unix-like system, and a little familiarity with it. I used Linux though MacOS will probably work without too much trouble. Windows might work if you knew your way around. 
@@ -32,9 +29,14 @@ This repo contains tools for doing both things.
 - `.obj` file
 - `.png` file
 
-For real multiplayer games, I think you'll need to find web hosting for these files, or appeal to the mod creators to add them to the mod. However, it's easy to test them in TTS for local-only games.
+#### Test It Out
+In TTS go `Objects > Custom > MODEL`, click where you want the new pawn, then press esc, then put the path to the `.obj` in Model/Mesh, and path to the `.png` in Diffuse/Image. I checked `Figurine` too. Click OK. 
 
-To do so, in TTS go `Objects > Custom > MODEL`, click where you want the new pawn, then press esc, then put the path to the `.obj` in Model/Mesh, and path to the `.png` in Diffuse/Image. I checked `Figurine` too. Click OK. 
+#### Publishing for the world
+
+I don't personally know how to do this. With the Orange and Teal player factions, people have been collaborating with the TTS Oath mod maintainers to get them distributed. 
+
+That said, I believe if you have a web server and host the two pawns on it, you can just give the TTS Model dialog URLs and all other players will see what you see. I'm not sure how you'd do the warbands. 
 
 ### Printing
 
@@ -45,5 +47,5 @@ Custom tuckboxes and player boards are outside the scope of this project.
 
 ### Blender &c
 
-- `.mtl` file - material file that links the `.obj` and `.png` files in some 3d editors. You can safely ignore it. 
+- `.mtl` file - material file that links the `.obj` and `.png` files in some 3d editors. I haven't tested it and recommend you ignore it. 
 
