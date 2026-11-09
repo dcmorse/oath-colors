@@ -11,6 +11,11 @@
 *.3mf
 *-ink.svg
 
+# docs can have images
+!docs/*.png
+!docs/*.svg
+!docs/*.jpg
+
 # Python / uv leftovers
 __pycache__/
 .venv/

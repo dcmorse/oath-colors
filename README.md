@@ -1,4 +1,11 @@
 # oath-colors
+
+<p align="center">
+  <img src="docs/bandit-king.jpg" height="280" alt="3D-printed green pieces with black decals, standing on the Oath board" title="3D printed, with decals">
+  &nbsp;
+  <img src="docs/tts.jpg" height="280" alt="Orange and teal custom pawns in Tabletop Simulator" title="In Tabletop Simulator">
+</p>
+
 ## command-line tools for custom player components for Oath:Chronicles of Empire and Exile
 
 Say you came up with a spiffing idea for a cute new pawn for Oath by Buried Giant Studios. You could draft a .svg of the player pawn and the warbands, and then it would be nice to be able to either:
