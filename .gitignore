@@ -1,7 +1,7 @@
 # input images
 *.svg
 
-# TTS models (svg_to_prism.py): mesh, material, texture
+# TTS models (svg_to_tts.py): mesh, material, texture
 *.obj
 *.mtl
 *.png

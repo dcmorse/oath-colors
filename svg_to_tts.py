@@ -22,7 +22,7 @@ Tabletop Simulator.
 Dependencies are declared inline above (PEP 723); uv installs them into a
 cached, isolated environment on first run, so nothing to set up:
 
-    ./svg_to_prism.py pawn.svg pawn --width 1.18 --depth 0.591
+    ./svg_to_tts.py pawn.svg pawn --width 1.18 --depth 0.591
 
 Takes an output BASENAME with no extension (passing one ending in .obj or
 .png is an error); the script appends the suffixes itself.

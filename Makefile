@@ -11,8 +11,8 @@
 # same wildcards as the art, so every SVG list drops names ending in ink.svg
 # before anything is built from it.
 
-SVG_TO_PRISM := ./svg_to_prism.py
-PRISM_FLAGS  := --width 1.8 --depth 0.9
+SVG_TO_TTS := ./svg_to_tts.py
+TTS_FLAGS  := --width 1.8 --depth 0.9
 
 # Size comes from the SVG itself (96 dpi user units); only depth is set here.
 SVG_TO_PRINT        := ./svg_to_print.py
@@ -44,10 +44,10 @@ tts: $(OBJS)
 print: $(STLS)
 plates: $(PLATES)
 
-# svg_to_prism takes the bare basename ($*) and appends .obj/.png (and
+# svg_to_tts takes the bare basename ($*) and appends .obj/.png (and
 # writes .mtl) itself; passing a name ending in .obj/.png is an error.
-%.obj: %.svg $(SVG_TO_PRISM)
-	$(SVG_TO_PRISM) $< $* $(PRISM_FLAGS)
+%.obj: %.svg $(SVG_TO_TTS)
+	$(SVG_TO_TTS) $< $* $(TTS_FLAGS)
 
 # Same basename convention; also writes $*-ink.svg alongside the .stl.
 $(PAWN_STLS):    PRINT_FLAGS := $(PAWN_PRINT_FLAGS)
